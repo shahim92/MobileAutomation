@@ -22,7 +22,7 @@ public class MobileApplicationTest {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
-        capabilities.setCapability(MobileCapabilityType.APP, "/Users/zann/eclipse-workspace/MobileAutomation/Generic/src/main/resources/td.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "/Users/kawsar/IdeaProjects/TeamProject/MobileAutomationPractice/EspnCricinfo/src/main/app/ESPNCricinfo.apk");
         appiumDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
         appiumDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -30,7 +30,7 @@ public class MobileApplicationTest {
 
         if (account.isDisplayed()) {
             System.out.println(account.getText() + "is displayed");
-            appiumDriver.findElement(By.xpath("//android.widget.Button[@text='ACCOUNTS']")).click();
+            appiumDriver.findElement(By.xpath("//android.widget.Button[@text='LOG IN']")).click();
         }
 
         try {
@@ -38,7 +38,6 @@ public class MobileApplicationTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
 
     }
 
