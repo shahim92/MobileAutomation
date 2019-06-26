@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android test suite for CricBuzz">
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="deviceName" value="PIXEL 2 API 28 "/>
+    <parameter name="version" value="9"/>
+
+    <test name="CricBuzz Test" preserve-order="true">
+        <classes>
+            <class name="testcricbuzzhome.TestCricBuzzHome"/>
+        </classes>
+    </test>
+</suite>

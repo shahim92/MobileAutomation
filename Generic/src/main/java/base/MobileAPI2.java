@@ -78,7 +78,7 @@ public class MobileAPI2 {
             capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
             capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
             capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);
-            capabilities.setCapability(MobileCapabilityType.APP, "/Users/kawsar/IdeaProjects/TeamProject/MobileAutomationPractice/Cricbuzz/src/main/app/Cricbuzz.apk");
+            capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\shahi\\MobileAutomation\\Generic\\src\\main\\resources\\Cricbuzz Live Cricket Scores News_v4.5.002_apkpure.com.apk");
             appiumDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
 
         } else {
